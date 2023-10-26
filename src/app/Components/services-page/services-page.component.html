@@ -1,0 +1,94 @@
+<!-- Desktop -->
+<div class="services overflow-hidden d-none d-lg-flex flex-column align-items-center justify-content-center">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color:white"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" style="background-color:white"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" style="background-color:white"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3" style="background-color:white"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img id="matrimoni" src="assets/wedding.jpg" class="d-block opacity-50 photo" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button (click)="zoom($event)" class="d-inline-flex justify-content-center align-items-center btn btn-sm rounded-5 text-light" style="width: fit-content; font-size: 2vw; border: none;">
+            <p class="mb-0 ms-4 title" style="pointer-events: none;">Matrimoni</p>
+            <i class="bi bi-arrow-right hidden-arrow" style="font-size: 1.5vw; pointer-events: none;"></i>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img id="drone" src="assets/drone.jpg" class="d-block opacity-50 photo" alt="...">
+        <div class="carousel-caption d-none d-md-flex flex-column justify-content-center align-items-center">
+          <button (click)="zoom($event)" class="d-inline-flex justify-content-center align-items-center btn btn-sm rounded-5 text-light" style="width: fit-content; font-size: 2vw; border: none;">
+            <p class="mb-0 ms-4 title" style="pointer-events: none;">Drone</p>
+            <i class="bi bi-arrow-right hidden-arrow" style="font-size: 1.5vw; pointer-events: none;"></i>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="sde" src="assets/sde.jpg" class="d-block opacity-50 photo" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button (click)="zoom($event)" class="d-inline-flex justify-content-center align-items-center btn btn-sm rounded-5 text-light" style="width: fit-content; font-size: 2vw; border: none;">
+            <p class="mb-0 ms-4 title" style="pointer-events: none;">SDE</p>
+            <i class="bi bi-arrow-right hidden-arrow" style="font-size: 1.5vw; pointer-events: none;"></i>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="reel" src="assets/reel.jpg" class="d-block opacity-50 photo" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <button (click)="zoom($event)" class="d-inline-flex justify-content-center align-items-center btn btn-sm rounded-5 text-light" style="width: fit-content; font-size: 2vw; border: none;">
+            <p class="mb-0 ms-4 title" style="pointer-events: none;">Reel</p>
+            <i class="bi bi-arrow-right hidden-arrow" style="font-size: 1.5vw; pointer-events: none;"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Mobile -->
+<div class="services overflow-hidden d-flex d-lg-none flex-column align-items-center justify-content-center">
+  <div class="scrollable-container overflow-auto p-2 w-75">
+    <div class="card text-bg-dark shadow mb-3 overflow-hidden">
+      <img id="matrimoni" src="assets/wedding.jpg" class="card-img opacity-25" alt="...">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center p-1">
+        <p class="card-title mb-1" style="font-size: 3.5vw;">Matrimoni</p>
+        <button (click)="zoom($event)" class="btn btn-sm btn-outline-light rounded-5" style="width: fit-content; font-size: 2.5vw;">Altro <i class="ms-1 bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark shadow mb-3 overflow-hidden">
+      <img id="drone" src="assets/drone.jpg" class="card-img opacity-25" alt="...">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+        <p class="card-title mb-1" style="font-size: 3.5vw;">Drone</p>
+        <button (click)="zoom($event)" class="btn btn-sm btn-outline-light rounded-5" style="width: fit-content; font-size: 2.5vw;">Altro <i class="ms-1 bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark shadow mb-3 overflow-hidden">
+      <img id="sde" src="assets/sde.jpg" class="card-img opacity-25" alt="...">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center p-1">
+        <p class="card-title mb-1" style="font-size: 3.5vw;">SDE</p>
+        <button (click)="zoom($event)" class="btn btn-sm btn-outline-light rounded-5" style="width: fit-content; font-size: 2.5vw;">Altro <i class="ms-1 bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark shadow overflow-hidden">
+      <img id="reel" src="assets/reel.jpg" class="card-img opacity-25" alt="...">
+      <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center p-1">
+        <p class="card-title mb-1" style="font-size: 3.5vw;">Reel</p>
+        <button (click)="zoom($event)" class="btn btn-sm btn-outline-light rounded-5" style="width: fit-content; font-size: 2.5vw;">Altro <i class="ms-1 bi bi-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>

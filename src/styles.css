@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Poppins;
+  src: url(https://static1.squarespace.com/static/6412b954167fb959080a9874/t/64e08b2ec3dafa01ab100e59/1692437295189/Poppins-Regular.ttf);
+}
+
+* {
+  font-family: Poppins !important;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}

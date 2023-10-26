@@ -1,0 +1,30 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+.nav-link {
+  color: rgb(201, 200, 200);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  color: white;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(47, 50, 54);
+}
+
+.dropdown-item:focus {
+  background-color: rgb(61, 63, 66);
+}

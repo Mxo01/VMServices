@@ -1,0 +1,56 @@
+.mxoPage {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(22, 22, 22);
+}
+
+.scrollable-container {
+  height: calc(100svh - 56px);
+  margin-top: 56px;
+}
+
+.nav-link, p {
+  color: rgb(201, 200, 200);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  color: white;
+}
+
+.email-link {
+  color: rgb(98, 159, 215);
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+.small-text {
+  font-size: 0.8rem;
+}
+
+.mini-text {
+  font-size: 0.7rem;
+}
+
+#picture {
+  animation: floating ease 4s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0%, 0%)
+  }
+
+  50% {
+    transform: translate(0%, 3%)
+  }
+
+  100% {
+    transform: translate(0%, 0%)
+  }
+}
