@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -6,8 +6,9 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
-export class InfoComponent implements OnInit {
+export class InfoComponent implements OnInit, AfterViewInit {
   id: string = '';
+  video: HTMLVideoElement | null = null;
 
   constructor(private route: ActivatedRoute) {}
 
@@ -16,4 +17,12 @@ export class InfoComponent implements OnInit {
       this.id = params['id'];
     });
   }
+
+  ngAfterViewInit() {
+    this.video = document.querySelector('video');
+
+    if (this.video) {
+        this.video.muted = true;
+    }
+}
 }
